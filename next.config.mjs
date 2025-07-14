@@ -6,9 +6,15 @@ const nextConfig = {
         protocol: "https",
         hostname: "images.pexels.com",
       },
+      {
+        protocol: "https",
+        hostname: "img.clerk.com",
+      },
     ],
-    // 👇 This ensures local images work — though it works by default
     unoptimized: false,
+  },
+  experimental: {
+    serverActions: true,
   },
 };
 
