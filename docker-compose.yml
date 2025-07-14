@@ -19,9 +19,10 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - DATABASE_URL: postgresql://myuser:mypassword@localhost:5432/mydb
+      - DATABASE_URL: "postgresql://neondb_owner:npg_IpBjV8h2rzPe@ep-wandering-boat-a2zzku7m-pooler.eu-central-1.aws.neon.tech/schoolManagement?sslmode=require&channel_binding=require"
     depends_on:
       - postgres
 
 volumes:
   postgres_data:
+#  - DATABASE_URL: postgresql://myuser:mypassword@localhost:5432/mydb
